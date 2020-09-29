@@ -1,0 +1,31 @@
+Copyright Sebastian Samoilescu 2019
+
+|--------------------------------|
+|   Nume:  Sebastian Samoilescu  |
+|   Grupa: 325CA                 |
+|--------------------------------|
+
+
+Descriere Structura implementare:
+
+-----> Pe baza clase "Player" am extins clasa "Base Player" care la urma ei se lasa exstinsa Descriere
+       clasele "Greedy Player" si "Bribe Player" intrucat impartasesc metode similare.
+
+-----> De asemenea am folosit si conceptul de compunerere in clasa "Player"(compunerere cu "Shop","Bag")
+
+Logica Implementarii:
+
+-----> Fiecare runda a fost impartita exact cum este descrisa in enunt si se foloseste de
+       metode specifice clasei Player(impartirea cartiilor, stabilirea sacului, inspectia serifului)
+
+-----> Pentru a salva jucatorii facem upcasting catre clasa parinte "Player" dupa ce realizam
+       creearea fiecarui jucator.
+
+-----> Pentru a adauga cele mai frecvente bunuri folosesc o structura de tip HashTable
+
+-----> Pentru a determina cele mai profitabile bunuri ilegale sau legale ma folosesc
+       de cartile sortate dupa profit.
+       
+-----> La sfarsitul jocul folosesc de asemenea un HashTable pentru a adauga bonusurile
+       King si Queen (cheia este id ul bunului, iar valoarea este data de o structura
+       ce memoreaza Kingid si Queenid)
